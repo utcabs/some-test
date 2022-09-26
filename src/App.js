@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import Login from "./components/Login";
+import Profile from "./components/Profile";
 import './App.css';
-
+import CountrySelector from "./components/Autocomplete";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div> 
+    <Profile/>
+      <Login/>
+     <CountrySelector/>
     </div>
   );
 }
-
 export default App;
